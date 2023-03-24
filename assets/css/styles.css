@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2e80ce;
+    --secondary: #10375c;
+    --text-desc: #575f66;
+    --text-header: #c9d2da;
+    --text-link-footer: #a9b3bb;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Sora, sans-serif;
+}
+
+.line-number {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.line-clamp-1 {
+    --line-clamp: 1;
+}
+
+.line-clamp-3 {
+    --line-clamp: 1;
+}
