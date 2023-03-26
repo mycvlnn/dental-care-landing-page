@@ -500,3 +500,85 @@ a {
     background: var(--primary-color);
     border-color: var(--primary-color);
 }
+
+/* ======================== App install ======================== */
+
+.cta {
+    margin: 95px 0 170px;
+}
+
+.cta__wrapper {
+    background-color: var(--primary-color);
+    padding: 75px 70px;
+    position: relative;
+}
+
+.cta__media {
+    flex-shrink: 0;
+    width: 284px;
+}
+
+.cta__img {
+    height: 522px;
+    width: 284px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    object-fit: cover;
+}
+
+.cta__content {
+    flex: 1;
+    padding-left: 160px;
+}
+
+.cta__content .sub-heading,
+.cta__content .heading-lv2 {
+    text-align: left;
+    color: #fff;
+    margin-left: 0;
+}
+
+.cta__content .sub-heading {
+    width: 100%;
+}
+
+.cta__apps {
+    margin-top: 36px;
+}
+
+.download-app {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+}
+
+.download-app + .download-app {
+    margin-left: 28px;
+}
+
+.download-app__icon {
+    margin-right: 8px;
+}
+
+.download-app__content {
+    text-align: left;
+}
+
+.download-app__label {
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.download-app__store {
+    margin-top: 3px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
