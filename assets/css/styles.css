@@ -35,7 +35,7 @@ body {
 }
 
 .line-clamp-3 {
-    --line-clamp: 1;
+    --line-clamp: 3;
 }
 
 a {
@@ -294,4 +294,72 @@ a {
     font-weight: 300;
     line-height: 1.75;
     color: var(--text-desc);
+}
+
+/* ======================== Procedure section ======================== */
+
+.procedure {
+    padding: 100px 0;
+    background-color: #f6fbff;
+}
+
+.procedure .heading-lv2 {
+    text-align: left;
+}
+
+.procedure .sub-heading {
+    margin-left: 0;
+    text-align: left;
+}
+
+.procedure .row-center {
+    margin-top: 86px;
+    gap: 30px;
+}
+
+.procedure-item {
+    position: relative;
+    bottom: 0;
+    background-color: #eaf6ff;
+    border-radius: 4px;
+    transition: all linear 0.3s;
+}
+
+.procedure-item:hover {
+    background-color: var(--primary-color);
+    bottom: 16px;
+}
+
+.procedure-item:hover .procedure-item__link {
+    color: var(--primary-color);
+}
+
+.procedure-item__content {
+    margin: 16px;
+    padding: 42px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all linear 0.3s;
+}
+
+.procedure-item__title {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: var(--secondary);
+}
+
+.procedure-item__desc {
+    margin-top: 28px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--text-desc);
+}
+
+.procedure-item__link {
+    display: inline-block;
+    margin-top: 18px;
+    font-weight: 300;
+    color: var(--text-desc);
+    transition: all linear 0.3s;
 }
