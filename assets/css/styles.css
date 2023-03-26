@@ -363,3 +363,140 @@ a {
     color: var(--text-desc);
     transition: all linear 0.3s;
 }
+
+/* ======================== About section ======================== */
+
+.about-us {
+    padding: 170px 0;
+}
+
+.about-us__media {
+    display: flex;
+    width: 570px;
+    height: 491px;
+    position: relative;
+}
+
+.about-us__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-us__img:last-child {
+    width: 332px;
+    height: 370px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.about-use__content {
+    flex: 1;
+    padding-left: 130px;
+}
+
+.about-use__content .heading-lv2 {
+    text-align: left;
+}
+
+.about-use__content .sub-heading {
+    text-align: left;
+}
+
+.about-use__content .btn {
+    margin-top: 38px;
+}
+
+/* ======================== Member section ======================== */
+.member {
+    padding-bottom: 170px;
+}
+
+.member__cta {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.member__list {
+    --gap: 34px;
+    --col: 4;
+
+    margin-top: 70px;
+    margin-bottom: 38px;
+    margin-left: calc(-1 * var(--gap));
+    overflow: hidden;
+}
+
+.member__item {
+    margin-left: var(--gap);
+    width: calc(100% / var(--col) - var(--gap));
+    flex-shrink: 0;
+}
+
+.member__avatar {
+    background: #eaf6ff;
+    height: 318px;
+    border-radius: 6px;
+    /* padding-top: 28px; */
+}
+
+.member__img {
+    margin-top: auto;
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 28px;
+}
+
+.member__name {
+    font-weight: 400;
+    line-height: 1.75;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.member__desc {
+    display: block;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: var(--text-desc);
+}
+
+.member__control {
+    justify-content: center;
+}
+
+/* Control slide btn */
+.controls-slide {
+    display: flex;
+}
+
+.controls-slide__btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--text-desc);
+    border: 1px solid currentColor;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.controls-slide__btn + .controls-slide__btn {
+    margin-left: 18px;
+}
+
+.controls-slide__btn--active {
+    color: #fff;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
