@@ -672,3 +672,44 @@ a {
     font-size: 1.4rem;
     color: var(--secondary);
 }
+
+/* ======================== Appointment ======================== */
+
+.appointment {
+    margin-bottom: 170px;
+    text-align: center;
+}
+
+.appointment .container {
+    padding: 100px 178px;
+    background-color: #f7fbff;
+}
+
+.appointment .heading-lv2 {
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.appointment .heading-lv2::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 136px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+}
+
+.appointment .sub-heading {
+    width: 100%;
+}
+
+.appointment .btn {
+    margin-top: 38px;
+    display: inline-block;
+}
