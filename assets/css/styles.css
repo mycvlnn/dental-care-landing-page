@@ -3,6 +3,7 @@
 }
 
 :root {
+    --width-container: 1170px;
     --primary-color: #2e80ce;
     --secondary: #10375c;
     --text-desc: #575f66;
@@ -19,6 +20,8 @@ body {
     font-family: Sora, sans-serif;
 }
 
+/*  ======================== Common ========================  */
+
 .line-number {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 2);
@@ -33,4 +36,159 @@ body {
 
 .line-clamp-3 {
     --line-clamp: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: var(--width-container);
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    min-width: 205px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 60px;
+    padding: 0 20px;
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: 999px;
+    cursor: pointer;
+    border: none;
+}
+
+.row-center {
+    display: flex;
+    align-items: center;
+}
+
+/* ======================== End Common ======================== */
+
+/* ======================== Header ======================== */
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: var(--secondary);
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.header--fixed {
+    position: sticky;
+    top: -15px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* ======================== Navbar ======================== */
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+}
+
+.authen__login,
+.navbar__link {
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--text-header);
+    padding: 10px 21px;
+}
+
+.navbar__item.active .navbar__link {
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+    display: flex;
+    align-items: center;
+    transition: all linear 0.3s;
+}
+
+.navbar__item.active .navbar__link::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: #fff;
+    margin-right: 8px;
+}
+
+.navbar__item:hover .navbar__link {
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+/* ======================== Authen ======================== */
+
+.authen .authen__signup {
+    line-height: 44px;
+    min-width: 104px;
+    font-size: 1.4rem;
+    margin-left: 7px;
+}
+
+/* ======================== Hero ======================== */
+
+.hero {
+    padding: 61px 0 110px;
+    background-color: var(--secondary);
+}
+
+.hero__info {
+    flex: 1;
+    padding-right: 113px;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--text-header);
+}
+
+.hero__cta {
+    margin-top: 38px;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #ffffff;
+}
+
+.hero__media {
+    width: 534px;
+}
+
+.hero__img:first-child {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    border-radius: 0px 6px 6px 0px;
 }
