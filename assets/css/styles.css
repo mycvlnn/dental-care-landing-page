@@ -9,6 +9,7 @@
     --text-desc: #575f66;
     --text-header: #c9d2da;
     --text-link-footer: #a9b3bb;
+    --font-footer: "Open Sans", sans-serif;
 }
 
 html {
@@ -712,4 +713,155 @@ a {
 .appointment .btn {
     margin-top: 38px;
     display: inline-block;
+}
+
+/* ======================== Footer ======================== */
+.footer {
+    font-family: var(--font-footer);
+    padding: 100px 0 42px;
+    background-color: var(--secondary);
+}
+
+.footer__row {
+    display: flex;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+.footer__form-input::placeholder,
+.footer__link,
+.footer__desc,
+.footer__slogan {
+    display: block;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #a9b3bb;
+}
+
+.footer__desc,
+.footer__link {
+    font-size: 1.4rem;
+}
+
+.footer__link:hover {
+    color: #fff;
+}
+
+.footer__desc {
+    max-width: 273px;
+}
+
+.footer__section + .footer__section {
+    margin-top: 28px;
+}
+
+.footer__col:first-child {
+    width: 35%;
+}
+
+.footer__col:first-child .footer__slogan {
+    max-width: 336px;
+}
+
+.footer__col:nth-child(2) .footer__link,
+.footer__col:nth-child(3) .footer__link {
+    margin-top: 10px;
+}
+
+.footer__col:nth-child(2) .footer__section:last-child .footer__link {
+    margin-top: 14px;
+}
+
+.footer__col:nth-child(2),
+.footer__col:nth-child(3) {
+    width: 18%;
+}
+
+.footer__col:nth-child(4) {
+    width: 29%;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer__socials-link {
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__socials-link:first-child {
+    background-color: var(--primary-color);
+}
+
+.footer__socials-link + .footer__socials-link {
+    margin-left: 10px;
+}
+
+.footer__form {
+    margin-top: 10px;
+}
+
+.footer__form-group {
+    display: flex;
+    align-items: center;
+}
+
+.footer__form-input {
+    flex: 1;
+    height: 46px;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.footer__form-input:focus {
+    outline: none;
+}
+
+.footer__form-input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+
+.footer__form-input {
+    color: #fff;
+}
+
+.footer__form-submit {
+    font-family: var(--font-footer);
+    margin-left: 12px;
+    min-width: 108px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 15px 20px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.footer__copyright {
+    margin-top: 28px;
+    text-align: center;
+    border-top: 1px solid #406181;
+    padding-top: 28px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #aab3ba;
 }
