@@ -55,14 +55,6 @@
         <!-- Sora -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
-        <!-- Inter -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
-            rel="stylesheet"
-        />
-
         <!-- Open sans -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -325,7 +317,7 @@
                     <div class="row-center">
                         <figure class="about-us__media">
                             <img
-                                src="./assets/img/about-1.png"
+                                src="./assets/img/about-1.jpeg"
                                 alt="Take back your smile with shine."
                                 class="about-us__img"
                             />
@@ -356,68 +348,79 @@
                     </div>
                     <div class="member__list row-center">
                         <!-- Item 1 -->
-                        <section class="member__item">
-                            <figure class="member__avatar">
+                        <article class="member-item">
+                            <figure class="member-item__bg">
                                 <img
                                     src="./assets/img/dentist-1.png"
                                     alt="Dr. Essence Page"
-                                    class="member__img"
+                                    class="member-item__img"
                                 />
                             </figure>
-                            <h3 class="member__name">Dr. Essence Page</h3>
-                            <span class="member__desc"> DDS, California - Linda University </span>
-                        </section>
+                            <h3 class="member-item__name">Dr. Essence Page</h3>
+                            <span class="member-item__desc">
+                                DDS, California - Linda University
+                            </span>
+                        </article>
                         <!-- Item 2 -->
-                        <section class="member__item">
-                            <figure class="member__avatar">
+                        <article class="member-item">
+                            <figure class="member-item__bg">
                                 <img
                                     src="./assets/img/dentist-2.png"
                                     alt="Dr. Essence Page"
-                                    class="member__img"
+                                    class="member-item__img"
                                 />
                             </figure>
-                            <h3 class="member__name">Dr. Essence Page</h3>
-                            <span class="member__desc"> DDS, California - Linda University </span>
-                        </section>
+                            <h3 class="member-item__name">Dr. Essence Page</h3>
+                            <span class="member-item__desc">
+                                DDS, California - Linda University
+                            </span>
+                        </article>
 
                         <!-- Item 3 -->
-                        <section class="member__item">
-                            <figure class="member__avatar">
+                        <article class="member-item">
+                            <figure class="member-item__bg">
                                 <img
                                     src="./assets/img/dentist-3.png"
                                     alt="Dr. Essence Page"
-                                    class="member__img"
+                                    class="member-item__img"
                                 />
                             </figure>
-                            <h3 class="member__name">Dr. Essence Page</h3>
-                            <span class="member__desc"> DDS, California - Linda University </span>
-                        </section>
+                            <h3 class="member-item__name">Dr. Essence Page</h3>
+                            <span class="member-item__desc">
+                                DDS, California - Linda University
+                            </span>
+                        </article>
                         <!-- Item 4 -->
-                        <section class="member__item">
-                            <figure class="member__avatar">
+                        <article class="member-item">
+                            <figure class="member-item__bg">
                                 <img
                                     src="./assets/img/dentist-4.png"
                                     alt="Dr. Essence Page"
-                                    class="member__img"
+                                    class="member-item__img"
                                 />
                             </figure>
-                            <h3 class="member__name">Dr. Essence Page</h3>
-                            <span class="member__desc"> DDS, California - Linda University </span>
-                        </section>
-                        <section class="member__item">
-                            <figure class="member__avatar">
+                            <h3 class="member-item__name">Dr. Essence Page</h3>
+                            <span class="member-item__desc">
+                                DDS, California - Linda University
+                            </span>
+                        </article>
+                        <!-- Item 5 -->
+                        <article class="member-item">
+                            <figure class="member-item__bg">
                                 <img
                                     src="./assets/img/dentist-1.png"
                                     alt="Dr. Essence Page"
-                                    class="member__img"
+                                    class="member-item__img"
                                 />
                             </figure>
-                            <h3 class="member__name">Dr. Essence Page</h3>
-                            <span class="member__desc"> DDS, California - Linda University </span>
-                        </section>
+                            <h3 class="member-item__name">Dr. Essence Page</h3>
+                            <span class="member-item__desc">
+                                DDS, California - Linda University
+                            </span>
+                        </article>
                     </div>
                     <!-- Controls  -->
-                    <div class="member__control controls-slide">
+                    <div class="member__controls controls-slide">
                         <button class="controls-slide__btn">
                             <svg
                                 width="6"
@@ -472,7 +475,7 @@
                                 natural aging process, dentures might be the perfect solution.
                             </p>
                             <div class="cta__apps row-center">
-                                <button class="download-app">
+                                <a href="#!" class="download-app">
                                     <img
                                         src="./assets/icons/google-play.svg"
                                         alt="Google play"
@@ -482,9 +485,9 @@
                                         <span class="download-app__label">GET IT ON</span>
                                         <strong class="download-app__store">Google Play</strong>
                                     </div>
-                                </button>
+                                </a>
 
-                                <button class="download-app">
+                                <a href="#!" class="download-app">
                                     <img
                                         src="./assets/icons/app-store.svg"
                                         alt="App store"
@@ -494,7 +497,7 @@
                                         <span class="download-app__label">Download on the</span>
                                         <strong class="download-app__store">App Store</strong>
                                     </div>
-                                </button>
+                                </a>
                             </div>
                         </section>
                     </div>
@@ -571,29 +574,6 @@
                             </article>
 
                             <!-- Blog 2 -->
-                            <article class="blog">
-                                <a href="#!">
-                                    <figure class="blog__thumb">
-                                        <img
-                                            src="./assets/img/blog-2.png"
-                                            alt="What Is Population Health Management?"
-                                            class="blog__img"
-                                        />
-                                    </figure>
-                                </a>
-                                <div class="blog__body">
-                                    <h3 class="blog__title line-number">
-                                        <a href="#!"> What Is Population Health Management? </a>
-                                    </h3>
-                                    <p class="blog__desc line-number line-clamp-3">
-                                        It’s easy to think about medical care from a narrow
-                                        perspective. You go to the hospital.
-                                    </p>
-                                    <a href="#!" class="blog__redirect">Learn more</a>
-                                </div>
-                            </article>
-
-                            <!-- Blog 3 -->
                             <article class="blog">
                                 <a href="#!">
                                     <figure class="blog__thumb">
