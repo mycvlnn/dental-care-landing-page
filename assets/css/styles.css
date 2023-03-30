@@ -361,20 +361,21 @@ a {
     display: inline-block;
     margin-top: 18px;
     font-weight: 300;
-    color: var(--text-desc);
+    color: var(--primary-color);
     transition: all linear 0.3s;
 }
 
 /* ======================== About section ======================== */
 
 .about-us {
-    padding: 170px 0;
+    margin-top: 85px;
+    padding: 85px 0;
 }
 
 .about-us__media {
-    display: flex;
-    width: 570px;
-    height: 491px;
+    flex-shrink: 0;
+    width: 48.7%;
+    padding-bottom: 121px;
     position: relative;
 }
 
@@ -413,7 +414,9 @@ a {
 
 /* ======================== Member section ======================== */
 .member {
-    padding-bottom: 170px;
+    padding: 85px 0;
+    margin-bottom: 85px;
+    background-color: #ccc;
 }
 
 .member__cta {
@@ -432,36 +435,41 @@ a {
     overflow: hidden;
 }
 
-.member__item {
+.member-item {
     margin-left: var(--gap);
     width: calc(100% / var(--col) - var(--gap));
     flex-shrink: 0;
 }
 
-.member__avatar {
+.member-item:hover .member-item__img {
+    transform: scale(1.1);
+}
+
+.member-item__bg {
     background: #eaf6ff;
-    height: 318px;
     border-radius: 6px;
-    /* padding-top: 28px; */
+    overflow: hidden;
 }
 
-.member__img {
-    margin-top: auto;
-    border-radius: 6px;
-    height: 100%;
-    width: 100%;
+.member-item__img {
+    margin-top: 28px;
+    max-width: 100%;
+    height: 290px;
     object-fit: cover;
-    object-position: center 28px;
+    object-position: center;
+    vertical-align: bottom;
+    transition: 0.3s;
 }
 
-.member__name {
+.member-item__name {
+    margin-top: 12px;
     font-weight: 400;
     line-height: 1.75;
     text-align: center;
     color: var(--secondary);
 }
 
-.member__desc {
+.member-item__desc {
     display: block;
     font-weight: 300;
     font-size: 1.4rem;
@@ -470,7 +478,7 @@ a {
     color: var(--text-desc);
 }
 
-.member__control {
+.member__controls {
     justify-content: center;
 }
 
