@@ -21,6 +21,14 @@ body {
     font-family: Sora, sans-serif;
 }
 
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 /*  ======================== Common ========================  */
 
 .line-number {
